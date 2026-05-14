@@ -1,0 +1,10 @@
+venv/
+data/
+models/
+reports/
+screenshots/
+__pycache__/
+*.pkl
+*.h5
+.ipynb_checkpoints/
+.env
