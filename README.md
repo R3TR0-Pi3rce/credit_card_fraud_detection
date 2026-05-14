@@ -28,20 +28,35 @@ Credit card fraud is one of the most critical issues in the financial sector. Th
 
 ### 1. Clone the repository and navigate to the folder
 ```bash
-git clone <your-repo-url>
-cd credit-card-fraud-detection
+git clone https://github.com/R3TR0-Pi3rce/credit_card_fraud_detection.git
+cd credit_card_fraud_detection
 ```
 
-### 2. Install dependencies
+### 2. Create a Virtual Environment (Recommended)
+It is highly recommended to use a virtual environment to avoid dependency conflicts.
+**Windows:**
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+**Mac/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Add Dataset
-Place the `creditcard.csv` inside the `data/` folder.
+### 4. Download the Dataset
+1. Download the [Credit Card Fraud Detection Dataset from Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
+2. Ensure you have a folder named `data` in the root directory (create it if it doesn't exist).
+3. Extract the downloaded archive and place the `creditcard.csv` file inside the `data/` folder.
 
-### 4. Train the Models
-Run the training pipeline to train models and generate evaluation metrics:
+### 5. Train the Models
+Because trained machine learning models are too large for GitHub, you must generate them locally by running the training script. This script will train all models and save them to the `models/` directory.
 ```bash
 python train.py
 ```

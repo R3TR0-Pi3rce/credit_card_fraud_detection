@@ -28,6 +28,11 @@ def build_autoencoder(input_dim):
     return model
 
 def main():
+    # Ensure necessary directories exist
+    os.makedirs("models", exist_ok=True)
+    os.makedirs("reports", exist_ok=True)
+    os.makedirs("data", exist_ok=True)
+
     data_path = os.path.join("data", "creditcard.csv")
     if not os.path.exists(data_path):
         logging.error(f"Dataset not found at {data_path}. Please place the Kaggle dataset there.")

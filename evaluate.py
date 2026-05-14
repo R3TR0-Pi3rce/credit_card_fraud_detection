@@ -44,6 +44,8 @@ def evaluate_supervised(y_true, y_pred, y_prob, model_name):
         plt.close()
 
 def main():
+    os.makedirs("reports", exist_ok=True)
+    
     X_test_path = os.path.join("data", "X_test.csv")
     y_test_path = os.path.join("data", "y_test.csv")
     
