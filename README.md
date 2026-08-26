@@ -88,4 +88,4 @@ streamlit run dashboard.py
 - Advanced Explainable AI (XAI) using full SHAP integration in the dashboard.
 
 ## 👨‍💻 Author
-- Your Name / Organization
+- Aditya / DSATM
